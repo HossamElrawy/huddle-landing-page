@@ -1,0 +1,168 @@
+/* Header section styling */
+.head-section {
+  background-color: hsl(193, 100%, 96%);
+  width: 100%;
+  height: fit-content; /* Adjusts the height to fit content */
+  position: relative;
+  padding: 3.4375rem 4.375rem; /* Adds padding around the header */
+  overflow: hidden; /* Ensures content doesn't overflow the header */
+}
+
+/* Flexbox for logo and button */
+.logo-button-flex {
+  display: flex;
+  justify-content: space-between; /* Ensures even spacing between items */
+  align-items: center; /* Centers items vertically */
+}
+
+/* Desktop header background image */
+.header-background-desktop-picture {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+/* Mobile header background image */
+.header-background-mobile-picture {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  opacity: 0; /* Hidden by default */
+}
+
+/* Styling for the "Try it" button */
+.try-it-button {
+  font-weight: 700; /* Makes the text bold */
+  color: hsl(192, 100%, 9%);
+  padding: 0.6rem 3rem; /* Adds padding inside the button */
+  border: none; /* Removes default border */
+  border-radius: 1.25rem; /* Rounds the corners */
+  background-color: white; /* Sets background color */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow */
+  transition: color 0.3s; /* Smooth transition for color changes */
+  z-index: 1; /* Ensures it appears above background elements */
+  font-size: 1rem; /* Sets font size */
+}
+
+/* Hover effect for the "Try it" button */
+.try-it-button:hover {
+  color: hsl(208, 11%, 55%); /* Changes text color on hover */
+}
+
+/* Grid layout for the main content section */
+.getting-started-box {
+  display: grid;
+  grid-template-columns: 1fr 37.125rem; /* Defines two columns */
+  padding-top: 4.375rem; /* Adds top padding */
+  height: 79%; /* Sets height */
+  justify-content: space-between; /* Spaces out grid items horizontally */
+  align-items: center; /* Aligns grid items vertically */
+}
+
+/* Flexbox for community text content */
+.community-flex {
+  display: flex;
+  flex-direction: column; /* Stacks items vertically */
+  row-gap: 3.125rem; /* Adds spacing between rows */
+  align-items: start; /* Aligns items to the start */
+}
+
+/* Styling for the community header */
+.community-header {
+  font-family: "Poppins"; /* Sets the font */
+  font-weight: 600; /* Makes the text semi-bold */
+  color: hsl(192, 100%, 9%); /* Sets text color */
+  font-size: 2.75rem; /* Sets font size */
+  z-index: 1; /* Ensures it appears above background elements */
+}
+
+/* Styling for the community subtext */
+.community-sub {
+  color: hsl(192, 100%, 9%); /* Sets text color */
+  font-weight: 400; /* Sets normal font weight */
+  z-index: 1; /* Ensures it appears above background elements */
+}
+
+/* Styling for the "Get Started" button */
+.get-start-button {
+  padding: 1rem 4rem; /* Adds padding inside the button */
+  background-color: hsl(322, 100%, 66%); /* Sets background color */
+  border: none; /* Removes default border */
+  border-radius: 2.5rem; /* Rounds the corners */
+  color: hsl(208, 58%, 94%); /* Sets text color */
+  cursor: pointer; /* Changes cursor to pointer on hover */
+  transition: opacity 0.3s; /* Smooth transition for opacity changes */
+  z-index: 1; /* Ensures it appears above background elements */
+}
+
+/* Hover effect for the "Get Started" button */
+.get-start-button:hover {
+  opacity: 0.6; /* Reduces opacity on hover */
+}
+
+/* Styling for the header logo */
+.header-logo-picture {
+  z-index: 1; /* Ensures it appears above background elements */
+  width: 240px; /* Sets width */
+  height: 39px; /* Sets height */
+}
+
+/* Styling for the left drawing image */
+.left-drawing {
+  z-index: 1; /* Ensures it appears above background elements */
+  width: 594px; /* Sets width */
+  height: 424px; /* Sets height */
+}
+
+/* Responsive styles for screens smaller than 550px */
+@media (max-width: 550px) {
+  .head-section {
+    padding: 1rem; /* Reduces padding for smaller screens */
+  }
+
+  .header-background-mobile-picture {
+    opacity: 1; /* Shows mobile background */
+  }
+
+  .header-background-desktop-picture {
+    width: 100%;
+    opacity: 0; /* Hides desktop background */
+  }
+
+  .header-logo-picture {
+    width: 78px; /* Adjusts width for smaller screens */
+    height: 13px; /* Adjusts height for smaller screens */
+  }
+
+  .try-it-button {
+    font-size: 0.8rem; /* Reduces font size */
+    padding: 0.3rem 2rem; /* Adjusts padding */
+  }
+
+  .community-header {
+    font-size: 1.75rem; /* Reduces font size */
+    width: 350px; /* Sets maximum width */
+    text-align: center; /* Centers text */
+  }
+
+  .getting-started-box {
+    display: flex;
+    flex-direction: column; /* Stacks items vertically */
+  }
+
+  .left-drawing {
+    width: 95%; /* Reduces width */
+    align-items: center; /* Centers the image */
+  }
+
+  .community-sub {
+    text-align: center; /* Centers text */
+    width: 300px; /* Sets maximum width */
+  }
+
+  .community-flex {
+    align-items: center; /* Centers flex items */
+    margin-bottom: 32px; /* Adds bottom margin */
+  }
+}

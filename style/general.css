@@ -1,0 +1,9 @@
+/* Apply a global reset to remove default margin and padding from all elements */
+/* Use border-box for consistent element sizing across all elements */
+/* Set a default font-family to "Open Sans" for the entire document */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans";
+}

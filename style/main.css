@@ -1,0 +1,95 @@
+/* Main container styling */
+main {
+  display: grid; /* Enables grid layout */
+  grid-template-columns: 1fr; /* Single column layout */
+  padding: 4rem 5.6875rem 11.5625rem 5.6875rem; /* Adds padding around the main content */
+  row-gap: 2rem; /* Adds vertical spacing between rows */
+}
+
+/* Styling for the main content box */
+.main-box {
+  display: flex; /* Enables flexbox layout */
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.15); /* Adds a subtle shadow */
+  padding: 2.6875rem 1.75rem 2.6875rem 6.5625rem; /* Adds padding inside the box */
+  border-radius: 1rem; /* Rounds the corners of the box */
+  column-gap: 10.625rem; /* Adds horizontal spacing between columns */
+  align-items: center; /* Aligns items vertically */
+}
+
+/* Styling for the text container inside the main box */
+.main-text-container {
+  display: flex; /* Enables flexbox layout */
+  flex-direction: column; /* Stacks items vertically */
+  row-gap: 1.125rem; /* Adds spacing between rows */
+}
+
+/* Styling for the main heading */
+.head-word {
+  font-family: "Poppins"; /* Sets the font */
+  font-weight: 600; /* Makes the text semi-bold */
+  font-size: 1.5625rem; /* Sets the font size */
+  color: hsl(192, 100%, 9%); /* Sets the text color */
+}
+
+/* Styling for the explanation text box */
+.explanation-box {
+  width: 27.5rem; /* Sets the width of the box */
+  color: hsl(208, 11%, 55%); /* Sets the text color */
+  font-weight: 400; /* Sets normal font weight */
+}
+
+/* Styling for the first featured image */
+.f-i1 {
+  width: 355px; /* Sets the width */
+  height: 291px; /* Sets the height */
+}
+
+/* Styling for the second featured image */
+.f-i2 {
+  width: 355px; /* Sets the width */
+  height: 291px; /* Sets the height */
+}
+
+/* Styling for the third featured image */
+.f-i3 {
+  width: 355px; /* Sets the width */
+  height: 291px; /* Sets the height */
+}
+
+/* Responsive styles for screens smaller than 550px */
+@media (max-width: 550px) {
+  .main-box {
+    flex-direction: column; /* Stacks items vertically */
+    row-gap: 2rem; /* Adds vertical spacing between items */
+    padding: 3rem 2rem; /* Adjusts padding for smaller screens */
+    width: fit-content; /* Adjusts width to fit content */
+  }
+
+  .f-i1,
+  .f-i2,
+  .f-i3 {
+    width: 300px; /* Reduces width for smaller screens */
+    height: 246px; /* Reduces height for smaller screens */
+  }
+
+  .main-text-container {
+    order: 2; /* Changes the order of this container */
+  }
+
+  main {
+    display: flex; /* Changes layout to flexbox */
+    flex-direction: column; /* Stacks items vertically */
+    align-items: center; /* Centers items horizontally */
+    padding: 3rem 1.5rem 11rem 1.5rem; /* Adjusts padding for smaller screens */
+  }
+
+  .head-word {
+    font-size: 1.5625rem; /* Adjusts font size */
+    text-align: center; /* Centers the text */
+  }
+
+  .explanation-box {
+    width: 300px; /* Reduces width for smaller screens */
+    text-align: center; /* Centers the text */
+  }
+}
